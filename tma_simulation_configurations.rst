@@ -45,15 +45,3 @@ Installating PXI
 8) Cancel when labview cannot find the DatabaseSettingsConfig.ctl
 9) Cancel when labview cannot find the Axis Data.ctl
 10) When labview asks to find FGV_BasicFGVAction.ctl find it my navigating to Program Files (x86)\National Instruments\LabVIEW 2019\templates\TeknikerTemplates\_controles
-
-The reason we have the HIL needs to be true when in simulation mode. And False when do real telescope control. 
-We need atleast another ethercat 
-
-Alberto will send tomorrow how ethernet ports we will need
-
-We now configure the PXI for proper ethernet connections
-
-"Deploy ethercat master to PXI" -> what this really means to do is
-
-we currently have 2 issues. We can't change the network to ethercat. -> We think this can be solved purchases 2 4 port cards that ALberto will send us. The second is that I do not have the correct drivers. Only install compilations tools,
-12 - 0
