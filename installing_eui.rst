@@ -65,17 +65,17 @@ EUI Installation
 
 	#. Install Labview 2015. LabVIEW package manager runs on Labview 2015. This is the only reason we install LV 2015.
 
-		#. :download:`Download LabVIEW2015 <_static/EUIInstallationFiles/LabVIEW2015.tar.gz>`
+		#. :download:`Download LabVIEW2015 <_static/software/LabVIEW2015Linux.zip>`
 		#. Extract the file.
 		#. CD LabVIEW2015/32-bit 
 		#. ./INSTALL say yes to everything.
 
 	#. Install Labview 2018. Tekniker provided software was developed on LabVIEW 2018.
 
-		#. :download:`Download LabVIEW 2018 <_static/EUIInstallationFiles/LabVIEW2018.tar.gz>`, say yes to everything.
+		#. :download:`Download LabVIEW 2018 <_static/software/LabVIEW2018Linux.zip>`, say yes to everything.
 		#. Extract the file.
 		#. CD LabVIEW2018 
-		#. ./INSTALL say yes to everything.
+		#. ./INSTALL say yes to everythin3/31/20g.
 
 	#. Install Labview package manager https://vipm.jki.net/download, then install the following libraries. 
 
@@ -99,7 +99,7 @@ EUI Installation
 
 	#. Copy LabVIEW libraries created by Tekniker into the LabVIEW installation directory.
 
-		1. :download:`Download and unzip the Tekniker LabVIEW Libraries <_static/EUIInstallationFiles/TeknikerLabVIEWLibraries.tar.gz>`
+		1. :download:`Download and unzip the Tekniker LabVIEW Libraries <_static/software/TeknikerLabVIEWLibraries.zip>`
 		#. cd /usr/local/natinst/LabVIEW-2018-64
 		#. sudo rsync -ra /path/to/TeknikerLabVIEWLibraries/* . 
 		#. sudo chmod -R 777 ./*
