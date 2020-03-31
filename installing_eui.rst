@@ -2,7 +2,7 @@
 Installing EUI
 **************
 
-This page contains instructions for installing the EUI from scrath.
+This page contains instructions for installing the EUI from scratch.
 
 .. _eui-installation-prereqs:
 
@@ -10,50 +10,51 @@ Pre-requisites
 ==============
 1. Install Git. 
 
-	#. run ``sudo nano /etc/yum.repos.d/wandisco-git.repo``.
-	#. Copy and paste the text below and past into ``wandisco-git.repo``.
+	#. Do ``sudo nano /etc/yum.repos.d/wandisco-git.repo``.
+	#. Copy the text below and paste into ``wandisco-git.repo``.
 
-		| ``[wandisco-git]`` 
-		| ``name=Wandisco GIT Repository``
-		| ``baseurl=http://opensource.wandisco.com/centos/7/git/$basearch/``
-		| ``enabled=1``
-		| ``gpgcheck=1``
-		| ``gpgkey=http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco``
-		| ``Import GPG key for added repository key typing sudo rpm --import http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco``
+		.. code-block:: bash
+
+			[wandisco-git] 
+			name=Wandisco GIT Repository
+			baseurl=http://opensource.wandisco.com/centos/7/git/$basearch/
+			enabled
+			gpgcheck=1
+			gpgkey=http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco
+			Import GPG key for added repository key typing sudo rpm --import http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco
 
 	#. Import the keys with ``sudo rpm --import http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco``.
 	#. Install git ``sudo yum install git``.
 
 #. Install the following CentOS7 libraries for development.
 
-	a. ``sudo yum update``
-	#. ``sudo yum groupinstall "Development Tools"``
-	#. ``sudo yum install cmake``
-	#. ``sudo tum install boost-devel.x86_64``
-	#. ``wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm``
-	#. ``sudo rpm -ivh epel-release-latest-7.noarch.rpm``
-	#. ``sudo yum install geany``
-	#. ``sudo yum install java-1.7.0-openjdk-devel``
+	.. code-block:: bash
+		
+		sudo yum update
+		sudo yum groupinstall "Development Tools"
+		sudo yum install cmake boost-devel.x86_64
+		wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+		sudo rpm -ivh epel-release-latest-7.noarch.rpm
+		sudo yum install geany java-1.7.0-openjdk-devel
 
 #. Install the following Linux libraries to run Labview
 
-	a. ``sudo yum install glibc.i686``
-	#. ``sudo yum install libstdc++.so.6``
-	#. ``sudo yum install libXinerama.i686``
-	#. ``sudo yum upgrade gnome-packagekit-common``
-	#. ``sudo yum install libglvnd-glx-1.0.1-0.8.git5baa1e5.el7.i686``
+	.. code-block:: bash
+
+		sudo yum install glibc.i686 libstdc++.so.6 libXinerama.i686
+		sudo yum upgrade gnome-packagekit-common
+		sudo yum install libglvnd-glx-1.0.1-0.8.git5baa1e5.el7.i686
 
 #. Install the following for use with Docker. 
-
-    a. ``sudo yum install -y yum-utils``
-    b. ``sudo yum install -y device-mapper-persistent-data``
-    c. ``sudo yum install -y lvm2``
+    ``sudo yum install -y yum-utils device-mapper-persistent-data lvm2``
 
 .. _eui-installation:
 
 EUI Installation
 ================
-#. Install SAL, latest instructions for this can be found here [TODO - insert SAL technote installation guide]. for ts_xml use commit f9156b8bf300e6381b2d505da058c6b6475aed1f.
+#. Install SAL, latest instructions for this can be found here 
+	.. todo:: 
+		Insert SAL technote installation guide. for ts_xml use commit f9156b8bf300e6381b2d505da058c6b6475aed1f.
 
 
 #. Install TMA Operation Manager
@@ -157,9 +158,4 @@ EUI Installation
 		5 13 * * * docker run --rm -v /home/lsst/Documents/Docker/mariadb-docker/python:/script -v /home/lsst/Documents/Docker/mariadb-docker/backup:/backup python:3.7 python /script/main.py
 	14.	Save and exit crontab editor: 
 		``:wq``
-
-
-
-
-
 
