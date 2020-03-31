@@ -13,7 +13,7 @@ Turning on the CCW Aux Cabinet
 	#. Wait 2 minutes for the CCW Aux Cabinet to fully power on.
 	#. Restart the cRIO by pressing the reset button shown below.
 
-	.. figure:: /_static/crio_reset_button.png
+	.. figure:: /_static/images/crio_reset_button.png
 	    :name: crio_reset_button
 	    :target: http://target.link/url
 
