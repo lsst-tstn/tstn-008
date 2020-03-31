@@ -43,6 +43,12 @@ Pre-requisites
 	#. ``sudo yum upgrade gnome-packagekit-common``
 	#. ``sudo yum install libglvnd-glx-1.0.1-0.8.git5baa1e5.el7.i686``
 
+#. Install the following for use with Docker. 
+
+    a. ``sudo yum install -y yum-utils``
+    b. ``sudo yum install -y device-mapper-persistent-data``
+    c. ``sudo yum install -y lvm2``
+
 .. _eui-installation:
 
 EUI Installation
@@ -104,7 +110,56 @@ EUI Installation
 		#. sudo rsync -ra /path/to/TeknikerLabVIEWLibraries/* . 
 		#. sudo chmod -R 777 ./*
 
-#. Install Docker https://docs.docker.com/install/linux/docker-ce/centos/
+#. Install Docker 
+
+	a. Follow these steps https://docs.docker.com/install/linux/docker-ce/centos/
+	#.	Install the latest version of Docker CE and containerd.
+		``sudo yum install docker-ce docker-ce-cli containerd.io``
+	#.	Start docker.
+		``sudo systemctl start docker``
+	#.	Verify that Docker CE is installed correctly by running the hello-world image.
+		``sudo docker run hello-world``
 
 #. Install database		
+	
+	1.	Add the user to docker users: 
+		``$ sudo usermod -aG docker $USER``
+	2.	Activate docker to automatically launch
+		``$ sudo systemctl start docker``
+		``$ sudo systemctl enable docker``
+	3.	Reboot machine
+		``$ sudo reboot``
+	4.	Install docker compose
+		``$ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose``
+		``sudo chmod +x /usr/local/bin/docker-compose``
+	5.	Clone the repository here: /home/lsst/LSST
+		``cd /home/lsst/LSST``
+		``git clone https://gitlab.tekniker.es/aut/projects/3151-LSST/mariadb-docker.git``
+	6.	Update repository:
+		``cd /home/lsst/LSST/mariadb-docker``
+		``git pull``
+	7.	Go to /home/lsst/LSST/mariadb-docker 
+	8.	Start the docker service:
+		``docker-compose up -d``
+	9.	Get the last backup database available and copy it to: ./backup
+		Copy the three files: 
+		a.	lsst_AppData-XXX.sql.gz
+		b.	lsst_events-XXX.sql.gz
+		c.	lsst_settings-XXX.sql.gz
+	10.	Create database
+		``sudo ./createdatabases.pl``
+	11.	Restore last backup database. The script will choose the most recent backup. 
+		``sudo ./restoredatabases.pl``
+	12.	Edit contrab file to execute the python code that generates the backups: 
+		``sudo crontab -e``
+	13.	Add the following lines (Note: that the paths may change for each specific installation.):
+		5 12 * * * /home/lsst/Documents/Docker/mariadb-docker/createbackup.pl
+		5 13 * * * docker run --rm -v /home/lsst/Documents/Docker/mariadb-docker/python:/script -v /home/lsst/Documents/Docker/mariadb-docker/backup:/backup python:3.7 python /script/main.py
+	14.	Save and exit crontab editor: 
+		``:wq``
+
+
+
+
+
 
