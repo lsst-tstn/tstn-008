@@ -57,7 +57,8 @@ EUI Installation
 		Insert SAL technote installation guide. for ts_xml use commit f9156b8bf300e6381b2d505da058c6b6475aed1f.
 
 
-#. Install TMA Operation Manager
+Install TMA Operation Manager
+------------------------------------------
 	
 	#. ``git clone https://gitlab.tekniker.es/sai/projects/3151-LSST/lsst.git``
 	#. ``cd lsst``
