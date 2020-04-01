@@ -95,7 +95,7 @@ EUI Installation
 		.. note::
 			 if it is your first time running labVIEW you will need to make sure the port on Labview 2018 is configured and has localhost.
 
-		#. ``OpenG Toolkit``, as of writing this all but two dependencies installed. The uninstalled dependencies are OpenG Port IO and OpenG Toolkit. We only need the Toolkit, you can find the link for a manual download here https://sourceforge.net/projects/opengtoolkit/files/lib_openg_toolkit/4.x/openg.org_lib_openg_toolkit-4.0.1.9.vip/download. 
+		#. ``OpenG Toolkit``, as of writing this has all but two dependencies installed. The uninstalled dependencies are ``OpenG Port IO`` and ``OpenG Toolkit``. We only need the Toolkit, you can find the link for a manual download here https://sourceforge.net/projects/opengtoolkit/files/lib_openg_toolkit/4.x/openg.org_lib_openg_toolkit-4.0.1.9.vip/download. 
 		#. ``GPower All Toolsets``, as of writing this all but two dependencies installed. The uninstalled dependencies are GPower Timing, and GPower Events. We only need Gpower Timing, attempt to install it on VI Package Manager by searching for it just as you would normally search and install any package. 
 		#. ``Hidden Gems``
 		#. ``NI GOOP Development Suite``
