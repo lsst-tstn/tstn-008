@@ -11,7 +11,7 @@ HMI NSV Simulation
 The following instructions will help you understand and configure a simulation environment for the TMA Humane Machine Interface, which can be shortened to HMI. This is the most basic simulation that can be done. This is called the "HMI NSV Simulation" because we are simulation only the NSV's (Network Shared Variables) on a Windows machine to verify that the HMI is comminicating to the NSV's. Random NSV's will be generated so we will see the HMI behave eratically. The meat and potatoes of this configuration is to modify a configuration file to have the right IP addresses which point to the NSV hosting Windows machine. 
 
 	1. Install the HMI, if you have not done so you can find the instructions here [TO DO]
-	#. On a Windows machine :download:`download the NSV Simulator <_static/NSVSimulator.tar.gz>`.
+	#. On a Windows machine :download:`download the NSV Simulator <_static/software/NSVSimulator.zip>`.
 	#. Identify the IP Address of the Windows machine. The IP address that I set my windows machine to is 192.168.1.11. Manually set yours if you need to.
 	#. Identify the IP Address of the CentOS machine which is running the HMI. I manually set mine to be 192.168.1.10. Manually set yours if you need to. 
 	#. Connect both machines to a switch and verify that the CentOS and Windows machine can ping each other. 
@@ -29,3 +29,19 @@ The following instructions will help you understand and configure a simulation e
 	#. Do a global search for 192.168.209.10 and replace these with the IP address of the Windows machine running the NSV Simulator. In my case I will be replacing them with 192.168.1.11. At the time of writing this document there are 282 occurances when doing a global search and replace.
 
 	#. Well done! The EUI is now configured to operate with the NSV Simulator. Open HMI as you normally would [TODO LINK FOR OPENING THE EUI]
+
+Installation for the NSV Force shared 
+=====================================
+
+Installating PXI
+
+1) Install a git tool, I use source tree
+2) git pull the PXI software onto the windows machine
+3) Download Tekniker Labview Libraries by clinging https://gitlab.tekniker.es/aut/libraries/labview/labview
+4) Checkout branch LV_2018
+5) copy files in the local folder including the .git folder to Nationa Instruments/LabVIEW2019
+6) Select the preselected option that Labview asks to load
+7) Cancel when labview cannot find the HMI module
+8) Cancel when labview cannot find the DatabaseSettingsConfig.ctl
+9) Cancel when labview cannot find the Axis Data.ctl
+10) When labview asks to find FGV_BasicFGVAction.ctl find it my navigating to Program Files (x86)\National Instruments\LabVIEW 2019\templates\TeknikerTemplates\_controles
