@@ -87,7 +87,7 @@ EUI Installation
 	#. Install Labview package manager https://vipm.jki.net/download, then install the following libraries. 
 
 		.. note::
-			I would like to point out an observation while downloading the libraries. For a reason that is not appareant to me the download may sometimes fail. The following are some tricks that worked for me.
+			I would like to point out an observation while downloading the libraries. For a reason that is not apparent to me the download may sometimes fail. The following are some tricks that worked for me.
 			- right click, install
 			- Install the rest of the libraries and come back to it
 		 	- Manually find the download online
@@ -158,4 +158,3 @@ EUI Installation
 		5 13 * * * docker run --rm -v /home/lsst/Documents/Docker/mariadb-docker/python:/script -v /home/lsst/Documents/Docker/mariadb-docker/backup:/backup python:3.7 python /script/main.py
 	14.	Save and exit crontab editor: 
 		``:wq``
-
