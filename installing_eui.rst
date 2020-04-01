@@ -68,7 +68,8 @@ EUI Installation
 	#. ``cmake ..``
 	#. ``make``
 
-#. Install LabVIEW and dependencies.
+Install LabVIEW and dependencies
+-----------------------------------------------
 
 	#. Install Labview 2015. LabVIEW package manager runs on Labview 2015. This is the only reason we install LV 2015.
 
