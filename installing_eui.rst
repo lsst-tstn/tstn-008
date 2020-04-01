@@ -154,6 +154,8 @@ EUI Installation
 	12.	Edit contrab file to execute the python code that generates the backups: 
 		``sudo crontab -e``
 	13.	Add the following lines (Note: that the paths may change for each specific installation.):
+		.. code:: bash
+		
 		5 12 * * * /home/lsst/Documents/Docker/mariadb-docker/createbackup.pl
 		5 13 * * * docker run --rm -v /home/lsst/Documents/Docker/mariadb-docker/python:/script -v /home/lsst/Documents/Docker/mariadb-docker/backup:/backup python:3.7 python /script/main.py
 	14.	Save and exit crontab editor: 
