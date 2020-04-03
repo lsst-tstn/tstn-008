@@ -4,15 +4,17 @@ ATS Deployment Guide
 
 .. contents::
 .. sectnum::
+   :start: 0
 
+************
 Introduction
-=============
+************
 This document describes the procedure run the automatic test system.
 The document will show the hardware configuration in section 3 and software deployment in section 4.
 
-
+*******************
 Reference documents
-===================
+*******************
 
     +----+----------------------------+----------------------+---------+
     | Nº | Document                   | code                 | Version |
@@ -24,9 +26,13 @@ Reference documents
     |    |                            |                      |         |
     +----+----------------------------+----------------------+---------+
 
+    .. todo::
+    	obtain the table information from the ts_xml table
 
+
+**********************
 Hardware configuration
-======================
+**********************
 
 In this section the needed hardware and its configuration is explained.
 	
@@ -69,8 +75,9 @@ The hardware needed is the next one.
 The configuration of hardware is part of the project where the code is included, son configuration will be explained in section 4.
 
 
+********************
 Software deployment
-======================
+********************
 Each hardware has different software parts, and some hardware had more than one software part. In next sections each hardware element is explained
 	
 Windows Machine
@@ -132,8 +139,9 @@ Follow next steps to deploy this software
 8. Change the path of the field TCP_configuration_file to point to TCP_ServerConfig.xml file in the same data folder.
 9. Run ReadWriteNSVs.exe
 
+*******
 TMA PXI
--------
+*******
 
 This is the PXI where the control code for all subsystem is running. To be able to configure the TMA PXI, the development PC should be configured as shown in the deployment document 
 		
@@ -142,7 +150,16 @@ This is the PXI where the control code for all subsystem is running. To be able 
 3. Ensure that in the project properties the Conditional Disable Symbol “HIL” is set to “True”
 
 	a. Right click in the project an select properties
+
+	.. figure:: /_static/images/TMAPXIpic1.png
+	    :name: TMA_PXI_pic1
+	    :target: http://target.link/url
+	 
 	b. In the opened window go to Conditional Disable Symbols page and set the value for HIL symbol to “True”.
+
+	.. figure:: /_static/images/TMAPXIpic2.png
+	    :name: TMA_PXI_pic2
+	    :target: http://target.link/url
 
 4. Continue with steps 3.a to 3.c of the point 6.2 in the Deployment document.
 5. Open the RT_MCS_Main.vi
@@ -151,3 +168,6 @@ This is the PXI where the control code for all subsystem is running. To be able 
 
 	a. Right click TMA_PXI target and click Disconnect
  
+ 	.. figure:: /_static/images/TMAPXIpic3.png
+	    :name: TMA_PXI_pic3
+	    :target: http://target.link/url
