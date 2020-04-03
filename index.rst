@@ -5,6 +5,8 @@ The vendor for the TMA is Tekniker. They will be providing a  PDF documents for 
 
 .. toctree::
     :maxdepth: 1
+    :titlesonly:
+    :numbered:
 
     acronyms
     ccw_aux_cabinet

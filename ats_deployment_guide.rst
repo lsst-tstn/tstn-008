@@ -3,18 +3,15 @@ ATS Deployment Guide
 ********************
 
 .. contents:: Table of Contents
-.. sectnum::
-   :start: 0
 
-************
 Introduction
-************
+============
 This document describes the procedure run the automatic test system.
 The document will show the hardware configuration in section 3 and software deployment in section 4.
 
-*******************
+
 Reference documents
-*******************
+========================
 
     +----+----------------------------+----------------------+---------+
     | Nº | Document                   | code                 | Version |
@@ -30,9 +27,9 @@ Reference documents
     	obtain the table information from the ts_xml table
 
 
-**********************
+
 Hardware configuration
-**********************
+========================
 
 In this section the needed hardware and its configuration is explained.
 	
@@ -75,9 +72,9 @@ The hardware needed is the next one.
 The configuration of hardware is part of the project where the code is included, son configuration will be explained in section 4.
 
 
-********************
+
 Software deployment
-********************
+========================
 Each hardware has different software parts, and some hardware had more than one software part. In next sections each hardware element is explained
 	
 Windows Machine
@@ -139,9 +136,9 @@ Follow next steps to deploy this software
 8. Change the path of the field TCP_configuration_file to point to TCP_ServerConfig.xml file in the same data folder.
 9. Run ReadWriteNSVs.exe
 
-*******
+
 TMA PXI
-*******
+============
 
 This is the PXI where the control code for all subsystem is running. To be able to configure the TMA PXI, the development PC should be configured as shown in the deployment document 
 		
