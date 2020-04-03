@@ -2,7 +2,7 @@
 ATS Deployment Guide
 ********************
 
-.. contents::
+.. contents:: Table of Contents
 .. sectnum::
    :start: 0
 
