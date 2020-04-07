@@ -138,7 +138,7 @@ Follow next steps to deploy this software
 TMA PXI
 ============
 
-This is the PXI where the control code for all subsystem is running. To be able to configure the TMA PXI, the development PC should be configured as shown in the deployment document 
+This is the PXI where the control code for all subsystems is running. To be able to configure the TMA PXI, the development PC should be configured as shown in the deployment document 
 		
 1. Download the PXI repository: https://gitlab.tekniker.es/aut/projects/3151-LSST/LabVIEWCode/PXIController
 2. Open the LSST_MainControllerPXI.lvproj.
