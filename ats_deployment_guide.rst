@@ -63,7 +63,6 @@ PILZ CPU
 --------
 
 This will be used to simulate and test safety software
-The hardware needed is the next one.
 
 - PIlz PSSu 4000 ref 314070 
 - PSSu E F 4DI-T 
