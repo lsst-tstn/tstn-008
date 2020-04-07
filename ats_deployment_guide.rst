@@ -37,7 +37,7 @@ Windows Machine
 ---------------
 
 This is a Windows 10 machine where LabVIEW simulators and tools will run. Also, a specific tool to manage to simulator in the Speedgoat is implemented here.
-Nothing special is need in this machine
+Nothing special is needed in this machine.
 
 Speedgoat
 ---------
