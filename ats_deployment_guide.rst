@@ -90,7 +90,7 @@ This tool allows writing data to EtherCAT variables to other simulators using a 
 The source code and more documentation about configuration can be found in https://gitlab.tekniker.es/aut/projects/3151-LSST/hil/forceethercatvars.
 Follow next steps to deploy this software
 			
-1. If the installer is available continue in step 6
+1. If the installer is available continue to step 6
 2. Clone the repository in the link above
 3. Open the project ForceEtherCATVars.lvproj
 4. Go to “Build Specifications” and right click in “ForceIOs” to select “Build”
