@@ -111,7 +111,7 @@ Follow next steps to deploy this software
 3. Open the project SimulateLimits.lvproj
 4. Go to “Build Specifications” and right click in “SimulateLimits” to select “Build”
 5. When build finishes go to build folder and copy all files and folder 
-6. Paste compilation files to desired destination in Windows Machine
+6. Paste compiled files to desired destination in Windows Machine
 7. Open the "data" folder and open "GeneralConfiguration.xml" 
 8. Change the first path of the field TCP_senders_configuration_Path to point to ForceECATVars_TCP_SenderConfig.xml file in the same data folder.
 9. Change dim='[X]' to dim='[1]' for "TCP_senders_configuration_Path" and for "LimitsDefinition" tags. We are only using the first configured limit because you need the safety full simulator with PILZ hardware to use other limits, When you get this hardware (perhaps you have one on the submit) we can download code to it and use those other limits.
