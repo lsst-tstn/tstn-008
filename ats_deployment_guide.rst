@@ -106,7 +106,7 @@ This software allows to simulate the behaviour of some subsystem limits switches
 The source code and more documentation about configuration can be found in https://gitlab.tekniker.es/aut/projects/3151-LSST/hil/simulatelimits
 Follow next steps to deploy this software
 
-1. If the installer or executable is available continue in step 
+1. If the installer or executable is available continue to step 6 
 2. Clone the repository in the link above
 3. Open the project SimulateLimits.lvproj
 4. Go to “Build Specifications” and right click in “SimulateLimits” to select “Build”
