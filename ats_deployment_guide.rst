@@ -43,7 +43,6 @@ Speedgoat
 ---------
 
 The Speedgoat is used to simulate the main axis behaviour in real time. 
-The configuration of the hardware is the next one.
 
 - Speedgoat
 
