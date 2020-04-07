@@ -67,7 +67,7 @@ This will be used to simulate and test safety software
 - PSSu E F 4DI-T 
 - PSSu E F 4DO 0.5-T 
 	
-The configuration of hardware is part of the project where the code is included, son configuration will be explained in section 4.
+The configuration of hardware is part of the project where the code is included, some configuration will be explained in section 4.
 
 
 
