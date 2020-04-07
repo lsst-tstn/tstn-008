@@ -120,7 +120,7 @@ Follow next steps to deploy this software
 Read/Write Network Shared Variables Tool
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This tool allows to other simulators writing and reading data from network shared variables using a TCP custom protocol
+This tool allows reading and writing data from network shared variables to other simulators using a TCP based custom protocol.
 The source code and more documentation about configuration can be found in https://gitlab.tekniker.es/aut/projects/3151-LSST/hil/readvariables
 Follow next steps to deploy this software
 
