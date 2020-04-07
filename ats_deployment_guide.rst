@@ -86,7 +86,7 @@ Requirements
 
 Force EtherCAT Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This tool allows to other simulators writing data to EtherCAT variables using a TCP custom protocol. The value written using this tool we be a forcing value, so any slave value will be overwritten with the written value.
+This tool allows writing data to EtherCAT variables to other simulators using a TCP based custom protocol. The value written using this tool will overwrite any set value, so any slave value will be overwritten with the written value.
 The source code and more documentation about configuration can be found in https://gitlab.tekniker.es/aut/projects/3151-LSST/hil/forceethercatvars.
 Follow next steps to deploy this software
 			
