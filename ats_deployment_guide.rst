@@ -73,7 +73,7 @@ The configuration of hardware is part of the project where the code is included,
 
 Software deployment
 ========================
-Each hardware has different software parts, and some hardware had more than one software part. In next sections each hardware element is explained
+Each hardware has different software parts, and some hardware had more than one software part. In the following sections each hardware element is explained.
 	
 Windows Machine
 -------------------
