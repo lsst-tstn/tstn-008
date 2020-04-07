@@ -95,7 +95,7 @@ Follow next steps to deploy this software
 3. Open the project ForceEtherCATVars.lvproj
 4. Go to “Build Specifications” and right click in “ForceIOs” to select “Build”
 5. Go to “Build Specifications” and right click in “ForceEtherCatVars Installer” to select “Build”
-6. When finishes compilation open location and copy the “Volume” folder to Windows Machine
+6. When compilation is finished, open location and copy the “Volume” folder to Windows Machine
 7. Install the tool using the “install.exe”
 8. Run ForceIOs.exe.
 		
