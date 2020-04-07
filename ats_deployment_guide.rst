@@ -117,7 +117,7 @@ Follow next steps to deploy this software
 9. Change dim='[X]' to dim='[1]' for "TCP_senders_configuration_Path" and for "LimitsDefinition" tags. We are only using the first configured limit because you need the safety full simulator with PILZ hardware to use other limits, When you get this hardware (perhaps you have one on the submit) we can download code to it and use those other limits.
 10. Run SimulateLimits.exe
 
-Write/Read Network Shared Variables Tool
+Read/Write Network Shared Variables Tool
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This tool allows to other simulators writing and reading data from network shared variables using a TCP custom protocol
