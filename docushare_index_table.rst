@@ -20,4 +20,5 @@ LTS-396              GIS Statement of Work                      https://docushar
 092_308_C_M_01100    TMA Damping Analysis                       https://docushare.lsst.org/docushare/dsweb/Get/Document-35614/092-308-C-M-01100.PDF
 092_308_MO_I_00001   GIS Operation User Manuel.                 https://docushare.lsst.org/docushare/dsweb/Get/Document-35615/092-308-MO-I-00001.PDF
 092_308__F_M_01003   Encoder System Design Report               https://docushare.lsst.org/docushare/dsweb/Get/Document-35616/092-308-F-M-01003.PDF
+Document-315617      Softmotion Use Guide                       https://docushare.lsst.org/docushare/dsweb/Get/Document-35617/NISoftmotionUse.docx
 ===================  ======================================     ==========================================================================================================
