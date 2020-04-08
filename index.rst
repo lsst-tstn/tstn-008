@@ -5,6 +5,8 @@ The vendor for the TMA is Tekniker. They will be providing a  PDF documents for 
 
 .. toctree::
     :maxdepth: 1
+    :titlesonly:
+    :numbered:
 
     acronyms
     ccw_aux_cabinet
@@ -14,6 +16,7 @@ The vendor for the TMA is Tekniker. They will be providing a  PDF documents for 
     tma_simulation_configurations.rst
     installing_eui.rst
     docushare_index_table.rst
+    ats_deployment_guide.rst
 
 .. .. rubric:: References
 
