@@ -4,6 +4,13 @@ Installing EUI
 
 This page contains instructions for installing the EUI from scratch.
 
+
+.. note::
+	Steps from : to : have been completed on a CentOS Docker image here. You must manually complete the image by following steps : to :. Then, on a separate container : to :. 
+
+	This will complete the EUI, you can then using the Windows Virtual Machin here to host your NSV's.
+
+
 .. _eui-installation-prereqs:
 
 Pre-requisites
@@ -72,14 +79,14 @@ Install TMA Operation Manager
 Install LabVIEW and dependencies
 -----------------------------------------------
 
-	#. Install Labview 2015. LabVIEW package manager runs on Labview 2015. This is the only reason we install LV 2015.
+	#. Install Labview 2015 32 bit. LabVIEW package manager runs on Labview 2015. This is the only reason we install LV 2015.
 
 		#. :download:`Download LabVIEW2015 <_static/software/LabVIEW2015Linux.zip>`
 		#. Extract the file.
 		#. CD LabVIEW2015/32-bit 
 		#. ./INSTALL say yes to everything.
 
-	#. Install Labview 2018. Tekniker provided software was developed on LabVIEW 2018.
+	#. Install Labview 2018 64 bit SP1. Tekniker provided software was developed on LabVIEW 2018.
 
 		#. :download:`Download LabVIEW 2018 <_static/software/LabVIEW2018Linux.zip>`, say yes to everything.
 		#. Extract the file.
