@@ -15,7 +15,12 @@ This page contains instructions for installing the EUI from scratch.
 
 Pre-requisites
 ==============
-1. Install Git. 
+1. Obtain Tekniker Install files.
+
+	#. Speak with IT to get acces to the network server called "Pavo"
+	#. Copy the folder named "Tekniker Software" onto your local computer. This folder contains Intellection Property from our vendor, remember not to share this software.
+
+#. Install Git. 
 
 	#. Do ``sudo nano /etc/yum.repos.d/wandisco-git.repo``.
 	#. Copy the text below and paste into ``wandisco-git.repo``.
@@ -81,14 +86,14 @@ Install LabVIEW and dependencies
 
 	#. Install Labview 2015 32 bit. LabVIEW package manager runs on Labview 2015. This is the only reason we install LV 2015.
 
-		#. :download:`Download LabVIEW2015 <_static/software/LabVIEW2015Linux.zip>`
+		#. Copy LabVIEW2015 from the Tekniker Software folder onto your local computer.
 		#. Extract the file.
 		#. CD LabVIEW2015/32-bit 
 		#. ./INSTALL say yes to everything.
 
 	#. Install Labview 2018 64 bit SP1. Tekniker provided software was developed on LabVIEW 2018.
 
-		#. :download:`Download LabVIEW 2018 <_static/software/LabVIEW2018Linux.zip>`, say yes to everything.
+		#. Copy LabVIEW2018 from the Tekniker Software folder onto your local computer.
 		#. Extract the file.
 		#. CD LabVIEW2018 
 		#. ./INSTALL say yes to everythin3/31/20g.
@@ -115,7 +120,7 @@ Install LabVIEW and dependencies
 
 	#. Copy LabVIEW libraries created by Tekniker into the LabVIEW installation directory.
 
-		1. :download:`Download and unzip the Tekniker LabVIEW Libraries <_static/software/TeknikerLabVIEWLibraries.zip>`
+		1. Copy TeknikerLabVIEWLibraries.zip from the Tekniker Software folder onto your local computer.
 		#. cd /usr/local/natinst/LabVIEW-2018-64
 		#. sudo rsync -ra /path/to/TeknikerLabVIEWLibraries/* . 
 		#. sudo chmod -R 777 ./*
