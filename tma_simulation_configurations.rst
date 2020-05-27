@@ -11,7 +11,9 @@ HMI NSV Simulation
 The following instructions will help you understand and configure a simulation environment for the TMA Humane Machine Interface, which can be shortened to HMI. This is the most basic simulation that can be done. This is called the "HMI NSV Simulation" because we are simulation only the NSV's (Network Shared Variables) on a Windows machine to verify that the HMI is comminicating to the NSV's. Random NSV's will be generated so we will see the HMI behave eratically. The meat and potatoes of this configuration is to modify a configuration file to have the right IP addresses which point to the NSV hosting Windows machine. 
 
 	1. Install the HMI, if you have not done so you can find the instructions here [TO DO]
-	#. On a Windows machine :download:`download the NSV Simulator <_static/software/NSVSimulator.zip>`.
+	#. Speak with IT to get acces to the network server called "Pavo"
+	#. Copy the folder named "Tekniker Software" onto your local computer. This folder contains Intellection Property from our vendor, remember not to share this software.
+	#. On a Windows machine copy NSV Simulator from the Teknikser Software folder onto the local computer.
 	#. Identify the IP Address of the Windows machine. The IP address that I set my windows machine to is 192.168.1.11. Manually set yours if you need to.
 	#. Identify the IP Address of the CentOS machine which is running the HMI. I manually set mine to be 192.168.1.10. Manually set yours if you need to. 
 	#. Connect both machines to a switch and verify that the CentOS and Windows machine can ping each other. 
