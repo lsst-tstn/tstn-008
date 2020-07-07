@@ -15,6 +15,20 @@ Pre-requisites
 **************
 1) Install Vagrant
 2) Install VirtualBox
+3) Access to the PDM server 139.229.195.251
+	
+	a. Download OpenVPN and enter the IP address `139.229.195.251`
+
+	.. image:: _static/images/openvpn1.png
+
+	b. Enter the credential given to you by IT
+
+	.. image:: _static/images/openvpn2.png
+
+	c. Connect to the server using the mac finder
+
+	.. image:: _static/images/openvpn3.png
+
 
 NSV Simulator
 *************
