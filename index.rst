@@ -17,6 +17,7 @@ The vendor for the TMA is Tekniker. They will be providing a  PDF documents for 
     installing_eui.rst
     docushare_index_table.rst
     ats_deployment_guide.rst
+    tma_software_containers.rst
 
 .. .. rubric:: References
 
